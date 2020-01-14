@@ -17,6 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //                for clearing CoreData
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ServersCoreData")
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        do
+        {
+            let items = try context.fetch(fetchRequest) as! [NSManagedObject]
+            for item in items { context.delete(item) }
+            // Save Changes
+            try context.save()
+        }
+        catch
+        {
+            // Error Handling
+            // ...
+        }
+        
         return true
     }
 
@@ -41,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+
         self.saveContext()
     }
 

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100FA13023CD3E440060784F /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100FA12F23CD3E440060784F /* MapsViewController.swift */; };
 		10A90C4723CA2ECE0069CAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A90C4623CA2ECE0069CAE6 /* AppDelegate.swift */; };
 		10A90C4923CA2ECE0069CAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A90C4823CA2ECE0069CAE6 /* ViewController.swift */; };
 		10A90C4C23CA2ECE0069CAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A90C4A23CA2ECE0069CAE6 /* Main.storyboard */; };
 		10A90C4F23CA2ECE0069CAE6 /* WoTServerStatus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10A90C4D23CA2ECE0069CAE6 /* WoTServerStatus.xcdatamodeld */; };
 		10A90C5123CA2ED00069CAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A90C5023CA2ED00069CAE6 /* Assets.xcassets */; };
 		10A90C5423CA2ED00069CAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A90C5223CA2ED00069CAE6 /* LaunchScreen.storyboard */; };
+		10CA1A7D23CB48F600769209 /* ServersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA1A7C23CB48F600769209 /* ServersData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100FA12F23CD3E440060784F /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		10A90C4323CA2ECE0069CAE6 /* WoTServerStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoTServerStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A90C4623CA2ECE0069CAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A90C4823CA2ECE0069CAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		10A90C5023CA2ED00069CAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A90C5323CA2ED00069CAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A90C5523CA2ED00069CAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CA1A7C23CB48F600769209 /* ServersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				10A90C4623CA2ECE0069CAE6 /* AppDelegate.swift */,
 				10A90C4823CA2ECE0069CAE6 /* ViewController.swift */,
+				100FA12F23CD3E440060784F /* MapsViewController.swift */,
 				10A90C4A23CA2ECE0069CAE6 /* Main.storyboard */,
+				10CA1A7C23CB48F600769209 /* ServersData.swift */,
 				10A90C5023CA2ED00069CAE6 /* Assets.xcassets */,
 				10A90C5223CA2ED00069CAE6 /* LaunchScreen.storyboard */,
 				10A90C5523CA2ED00069CAE6 /* Info.plist */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100FA13023CD3E440060784F /* MapsViewController.swift in Sources */,
 				10A90C4923CA2ECE0069CAE6 /* ViewController.swift in Sources */,
+				10CA1A7D23CB48F600769209 /* ServersData.swift in Sources */,
 				10A90C4F23CA2ECE0069CAE6 /* WoTServerStatus.xcdatamodeld in Sources */,
 				10A90C4723CA2ECE0069CAE6 /* AppDelegate.swift in Sources */,
 			);
